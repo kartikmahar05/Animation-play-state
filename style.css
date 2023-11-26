@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #8ddacd;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #09151d;
+    animation: move 2s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .box:hover {
+    animation-play-state: paused;
+  }
+  
